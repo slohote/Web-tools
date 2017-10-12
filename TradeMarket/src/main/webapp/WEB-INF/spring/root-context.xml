@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+ 	<bean id="traderDao" class="com.neu.spring.dao.TraderDao" />  
+	<bean id="traderValidator" class="com.neu.spring.TraderValidator" />
+	<bean id="stockDao" class="com.neu.spring.dao.StockDao" /> 	
+	<bean id="stockValidator" class="com.neu.spring.StockValidator" />
+	<bean id="stockEventDao" class="com.neu.spring.dao.StockEventDao" /> 	
+	<bean id="stockEventValidator" class="com.neu.spring.StockEventValidator" />
+	<bean id="currentStockDao" class="com.neu.spring.dao.CurrentStockDao" />
+	<bean id="currentValidator" class="com.neu.spring.CurrentValidator" />
+	<bean id="stockCurrentDao" class="com.neu.spring.dao.StockCurrentDao" />
+	 <bean id="buyValidator" class="com.neu.spring.BuyValidator" />
+	 <bean id="buyOrderDao" class="com.neu.spring.dao.BuyOrderDao" />
+	 <bean id="sellValidator" class="com.neu.spring.SellValidator" />
+</beans>

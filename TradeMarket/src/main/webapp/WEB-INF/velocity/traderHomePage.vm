@@ -1,0 +1,8 @@
+<html>
+<head>
+<title>trader home page</title>
+</head>
+<body>
+Trader added :$userAccount.firstName
+</body>
+</html>

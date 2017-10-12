@@ -1,0 +1,91 @@
+
+<html>
+<head>
+    <title>Add User Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */
+     .jumbotron {
+      margin-bottom: 0;
+      background-color: currentColor;
+      padding-top: 28px;
+    padding-bottom: 12px;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+  
+</head>
+<body>
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1 style="background-color: cadetblue;">Fidelity</h1>
+    <p>Mission, Vision & Values</p>
+  </div>
+</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">FD</a>
+    </div>
+    </div>
+    </nav>
+<h3>Register New User</h3>
+<center>
+<form action="adduser.htm"  method="post">
+
+        
+<table>
+<tr>
+    <td>First Name:</td>
+    <td>#springBind("trader.firstName")<input type="text" name="firstName" size="30" /> <font color="red"><errors name="firstName"/></font></td>
+</tr>
+
+<tr>
+    <td>Last Name:</td>
+    <td>#springBind("trader.lastName")<input type="text" name="lastName" size="30" /> <font color="red"><errors name="lastName"/></font></td>
+</tr>
+
+
+<tr>
+    <td>User Name:</td>
+    <td>#springBind("trader.userName")<input type="text" name="userName" size="30" /> <font color="red"><errors name="userName"/></font></td>
+</tr>
+
+<tr>
+    <td>Password:</td>
+    <td>#springBind("trader.password") <input type="password" name="password" size="30" /> <font color="red"><errors name="password"/></font></td>
+</tr>
+
+ <tr>
+    <td>Email Id:</td>
+    <td>#springBind("trader.emailId")<input type="text" name="emailId" size="30" /> <font color="red"><errors name="emailId"/></font></td>
+</tr> 
+
+<tr>
+    <td><input type="submit" value="Create User" style="margin-left:100px;background-color: black;color: white;"/></td>
+</tr>
+</table>
+
+</form>
+</center>
+</body>
+</html>
