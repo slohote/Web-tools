@@ -50,7 +50,7 @@ public class ViewAnalysisController {
          catch (Exception e) {
             System.out.println(e.getMessage());
         }
-
+//add logs 
         ModelAndView mv = new ModelAndView("ViewAnalysis", "stocks", eventList);
         return mv;
 		
